@@ -1,13 +1,10 @@
-require 'sinatra'
+require './config/environment'
+
 
 class ApplicationController < Sinatra::Base
 
   get '/' do
-    "Hello, World!"
-  end
-
-  post '/' do
-    "Hello, World!"
+    erb :index
   end
 
 end
